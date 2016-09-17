@@ -7,6 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('ciclas');
+  this.route('about');
+  this.route('ciclaslist');
 });
 
 export default Router;

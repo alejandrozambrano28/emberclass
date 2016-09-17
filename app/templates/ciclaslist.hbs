@@ -1,0 +1,15 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Bienvenido!</h2>
+  <p>
+   buenas
+    <br>Revisa nuestra lista de ciclas.
+  </p>
+  {{#link-to 'about' class="button"}}
+    Sobre Nosotros
+  {{/link-to}}
+</div>
+{{#each model as |unit|}}
+{{ciclas-listas spy=unit}}
+{{/each}}
+{{outlet}}
